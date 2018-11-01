@@ -1,0 +1,20 @@
+Trabajando con imagenes en Processing.
+
+En el mundo digital una imagen es sencillamente 
+un grid rectangular de puntos, conocidos como pixeles; +donde cada uno
+de ellos poseé un color.
+
+Processing nos facilita el acceso a los pixeles con las funciones get() y set()
+
+el siguiente fragmento regresa el color de un pixel especifico y lo almacena en una variable
+
+PImage img = loadImage("tuimagen.jpg"); //carga la imagen
+image(img,0,0); //muestra la imagen desde la coordenada 0,0
+color c = get(10,50);//obtiene el color del pixel ubicado en 10,50
+
+La clase PImage tiene un método similar 
+
+PImage img = loadImage("tuimagen.jpg");
+color c = img.get(10,50);
+
+
